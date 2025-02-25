@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Jeremy Axel</h1>
 <h3 align="center">Aquí esta mi proyecto de pagina web.</h3>
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: https://jeremydaaxel.github.io/paginaweb/</h3>
 <p align="left">
 </p>
 
