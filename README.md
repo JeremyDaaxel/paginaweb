@@ -1,11 +1,3 @@
-back to edit
-
-copy-markdown
-
-download markdown
-
-download backup
-
 preview
 <h1 align="center">Hi 👋, I'm Jeremy Axel</h1>
 <h3 align="center">Aquí esta mi proyecto de pagina web.</h3>
