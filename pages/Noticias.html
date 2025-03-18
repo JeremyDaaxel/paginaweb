@@ -1,110 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css">
-    <title>ANINEWS</title>
+    <title>AniReport</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Iconos SVG -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
 </head>
+<body>
 
-<header class="container">
-    <nav class="navbar navbar-expand-lg bg-transparent p-3">
-    <div class="container-fluid">
-      <img src="../IMG's/LOGO.png" alt="Bootstrap" width="20%" height="20%">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-          <!-- INICIO -->
-          <li   class="nav-item">
-            <a class="white_color" class="nav-link" href="../index.html">Inicio</a>
-        </li>
-
-           <!-- NOTICIAS -->
-        <li class="nav-item">
-            <a class="white_color" class="nav-link" href="./Noticias.html">Noticias</a>
-        </li>
-
-            <!-- ESTRENOS -->
-         <li class="nav-item">
-              <a class="white_color" class="nav-link" href="./Estrenos.html">Estrenos</a>
-        </li>
-            
-            <!-- NOSOTROS -->
-        <li class="nav-item">
-              <a class="white_color" class="nav-link" href="./Nosotros.htm">Nosotros</a>
-        </li> 
-
-            <!-- CONTACTO -->
-        <li class="nav-item">
-              <a class="white_color" class="nav-link active" href="./Contacto.html">Contacto</a>
-        </li> 
-
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-          <button class="button" type="submit">Buscar</button>
-        </form>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../IMG's/LOGOS.png" alt="AniReport Logo"  class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Nosotros.htm">Nosotros</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-</header>
+</nav>
 
-<main class="container d-flex justify-content-center">
 
-<div class="card mb-3">
-  <img src="https://images4.alphacoders.com/135/1351823.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">NEW</h5>
-    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia quo explicabo sed repellendus officiis voluptas, adipisci voluptatem ut velit soluta tenetur architecto dignissimos magni quas quia, quos, alias tempore.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-  </div>
-</div>
+<!-- CARDS -->
+<section class="news-section">
+    <div class="container">
+        <div class="title_subtitle">
+        <h2 class="news-title">ÚLTIMAS NOTICIAS</h2>
+        <h3 class="aditional_info">descubre las nuevas noticias en este apartado.</h3>
+        </div>
+        <hr class="footer-line">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 1.webp">
+                    <div class="news-content">
+                        <p class="news-category">Anime</p>
+                        <p class="news-category">Mercancía</p>
+                        <h3 class="news-heading">Amazon también quiere meter sus manos en el anime</h3>
+                        <p class="news-description">Amazon quiere ponerse serio con el anime y expandir su catálogo a lo grande. En una entrevista con Variety, Jennifer Salke, direc...</p>
+                        <div class="news-meta">
+                            <span>💬 9</span> · <span>hace 1 hora</span> · <span>por Autor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 2.webp">
+                    <div class="news-content">
+                        <p class="news-category">Anime</p>
+                        <p class="news-category">Drama</p>
+                        <h3 class="news-heading">El próximo episodio de Kusuriya no Hitorigoto será 'incómodo'</h3>
+                        <p class="news-description">Este artículo incluye spoilers de la historia de "Kusuriya no Hitorigoto". Se recomienda discreción al lector. Los fanáticos de "Kusuriya no</p>
+                        <div class="news-meta">
+                            <span>💬 10</span> · <span>hace 2 horas</span> · <span>por Axel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 3.webp">
+                    <div class="news-content">
+                        <p class="news-category">Anime</p>
+                        <p class="news-category">Isekai</p>
+                        <h3 class="news-heading">Pronto sería ilegal leer Goblin Slayer y otros distintos mangas</h3>
+                        <p class="news-description">En Texas, Estados Unidos, se acaba de aprobar un proyecto de ley de censura que podría convertir en delito tener o ver muchos man...</p>
+                        <div class="news-meta">
+                            <span>💬 8</span> · <span>hace 3 horas</span> · <span>por Autor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 4.webp">
+                    <div class="news-content">
+                        <p class="news-category">Cultura</p>
+                        <p class="news-category">Estrenos</p>
+                        <h3 class="news-heading">Más héroes rechazados llegan a The Outcast's Restaurant!</h3>
+                        <p class="news-description">En el sitio oficial para la adaptación al anime de las novelas ligeras de Yuuki Kimikawa, "Welcome to the Outcast’s Restaurant! (Tsuihousha...</p>
+                        <div class="news-meta">
+                            <span>💬 12</span> · <span>hace 4 horas</span> · <span>por Autor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 5.webp">
+                    <div class="news-content">
+                        <p class="news-category">Cultura</p>
+                        <p class="news-category">Historia</p>
+                        <h3 class="news-heading">El cambio de cuerpos llega con Though I Am an Inept Villainess</h3>
+                        <p class="news-description">Un comunicado de prensa de TOHO Animation informó que las novelas ligeras de Satsuki Nakamura, "Though I Am an Inept...</p>
+                        <div class="news-meta">
+                            <span>💬 7</span> · <span>hace 5 horas</span> · <span>por Autor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="news-card">
+                    <img src="../IMG's/CARD 6.webp">
+                    <div class="news-content">
+                        <p class="news-category">Antiheroe</p>
+                        <p class="news-category">Cultura</p>
+                        <h3 class="news-heading">Un antihéroe llegará al anime en Scum of the Brave</h3>
+                        <p class="news-description">Un comunicado de prensa de LEED Publishing informó que el manga de Rocket Shokai y Nakashima723, "Scum of the Brave...</p>
+                        <div class="news-meta">
+                            <span>💬 15</span> · <span>hace 6 horas</span> · <span>por Autor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div class="card mb-3">
-  <img src="https://images4.alphacoders.com/135/1351823.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">NEW</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A natus eum corporis aperiam temporibus fugit. Totam, voluptatibus tempore. Ipsam hic, dolorum placeat reprehenderit veritatis nobis beatae. Ducimus ad qui incidunt.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-  </div>
-</div>
 
-<div class="card mb-3">
-  <img src="https://images4.alphacoders.com/135/1351823.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">NEW</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eum blanditiis accusantium hic, eaque quae laborum error inventore non rem aliquam ipsum esse rerum aliquid facere quibusdam quod, omnis aperiam.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-  </div>
-</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
 
-<div class="card mb-3">
-  <img src="https://images4.alphacoders.com/135/1351823.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">NEW</h5>
-    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laborum quasi sequi quas nemo molestiae illum. Culpa neque eos et ipsa asperiores fugit distinctio veniam nisi! Possimus est incidunt laudantium?</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-  </div>
-</div>
+        <!-- Enlaces de interés -->
+        <div class="footer-links">
+            <h4>Redes sociales</h4>
+            <hr class="footer-line">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">DMCA</a></li>
+            </ul>
+        </div>
 
-</main>
-
-<footer class="bg-dark py-2 mt-5 fixed-bottom">
-  <div class="container text-light text-center">
-    <p class="display-6 mb-2"> AniReport</p>
-    <small class="text-white-50">&copy; Copyright 2025>
-
-  </div>
+        <!-- Derechos de autor y DMCA -->
+        <div class="footer-bottom">
+            <div class="dmca">
+            </div>
+            <p>© 2018 - 2025 AniReport.com - Todos los derechos reservados.</p>
+            <p>Si quieres copiar o compartir nuestro contenido, puedes hacerlo. Siempre y cuando reconozcas la autoría del contenido.</p>
+        </div>
+    </div>
 </footer>
 
-<!-- JS BOOSTRAP --> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- Bootstrap JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

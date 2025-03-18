@@ -1,0 +1,293 @@
+.navbar {
+  background: linear-gradient(135deg, #f19100, #f19100);
+  padding: 15px;
+}
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+.navbar .navbar-brand img {
+  width: 10rem;
+}
+.navbar .nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+.navbar .nav-link:hover {
+  color: #2c005e !important;
+}
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(44, 0, 94, 0.9), rgba(10, 4, 39, 0.9)), url(../headers/Hero1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(241, 143, 15, 0.9), rgba(241, 143, 15, 0.9)), url(../headers/Hero2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+  .hero_2 .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+  .hero_2 .description {
+    font-size: 1rem;
+  }
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+
+.releases-section {
+  background: linear-gradient(135deg, #2c005e, #0a0427);
+  padding: 60px 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.releases-section .section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.releases-section .section-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.releases-section .releases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.releases-section .release-card {
+  background: linear-gradient(#411466, #240042);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  padding: 20px;
+  text-align: left;
+}
+.releases-section .release-card:hover {
+  transform: scale(1.02);
+}
+.releases-section .release-card .release-content {
+  padding-bottom: 10px;
+}
+.releases-section .release-card .release-content .release-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.releases-section .release-card .release-content .release-date {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #f1c40f;
+}
+.releases-section .release-card .release-content .release-description {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.releases-section .release-card .release-image {
+  width: 100%;
+  height: 180px;
+  background: #dfe6e9;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .releases-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.news-section {
+  background: linear-gradient(135deg, #2c005e, #0a0427);
+  padding: 60px 0;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.news-section .news-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+.news-section .aditional_info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.news-section .news-card {
+  background: linear-gradient(#411466, #240042);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+  margin: 1rem;
+}
+.news-section .news-card:hover {
+  transform: scale(1.02);
+}
+.news-section .news-card img {
+  width: 100%;
+  height: auto;
+}
+.news-section .news-card .news-content {
+  padding: 20px;
+}
+.news-section .news-card .news-content .news-category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #f19100;
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+}
+.news-section .news-card .news-content .news-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.news-section .news-card .news-content .news-description {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.news-section .news-card .news-content .news-meta {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    padding: 40px 10px;
+  }
+  .news-card {
+    flex-direction: column;
+    margin: 15px;
+  }
+  .title_subtitle {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-title, .aditional_info {
+    text-align: center;
+  }
+}
+.footer {
+  background: #240042;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+.footer .footer-social {
+  margin-bottom: 15px;
+}
+.footer .footer-social a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.footer .footer-social a:hover {
+  color: #ffffff;
+}
+.footer .footer-links h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.footer .footer-links .footer-line {
+  width: 50px;
+  height: 2px;
+  background: #ffffff;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.footer .footer-links ul li {
+  display: inline;
+}
+.footer .footer-links ul a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.footer .footer-links ul a:hover {
+  color: #ffffff;
+}
+.footer .footer-bottom {
+  margin-top: 20px;
+}
+.footer .footer-bottom .dmca img {
+  height: 40px;
+  margin-bottom: 5px;
+}
+.footer .footer-bottom p {
+  margin: 5px 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=styles.css.map */
