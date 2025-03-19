@@ -293,6 +293,100 @@ $font-weight-light: 300;
     }
 }
 
+//CONTACT
+// Estilos para la sección de contacto
+.contact-section {
+    background: linear-gradient(135deg, $light-bg, #0a0427); // Fondo con el estilo de tu web
+    padding: 50px 0;
+    color: $text-color;
+    font-family: $font-primary;
+
+    .container {
+        max-width: 35rem;
+        background: $card-gradient;
+         padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    label.text_color {
+        font-weight: $font-weight-medium;
+    }
+
+    .form-control {
+        background: rgba(255, 255, 255, 0.1);
+        color: $text-color;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: $hover-color;
+            outline: none;
+        }
+    }
+
+    .form-check-input {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+
+        &:checked {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+
+    .form-check-label,
+    .sub_text_color {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    button {
+        width: 100%;
+        background: $secondary-color;
+        color: $text-color;
+        font-weight: $font-weight-medium;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover {
+            background: $hover-color;
+        }
+    }
+}
+
+// Responsive para celulares
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 30px 10px;
+
+        .container {
+            max-width: 19rem;
+            padding: 20px; // Reduce padding en móviles
+            box-shadow: none; // Elimina sombra en móviles
+        }
+
+        .form-control {
+            font-size: 14px; // Reduce tamaño de fuente en inputs
+            padding: 8px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+}
+
 
 // Footer
 .footer {

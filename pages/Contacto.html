@@ -1,97 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css">
-    <title>ANINEWS</title>
+    <title>AniReport</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Iconos SVG -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../styles/styles.css">
+
 </head>
-
 <body>
-<header class="container">
-    <nav class="navbar navbar-expand-lg bg-transparent p-3">
-    <div class="container-fluid">
-      <img src="../IMG's/LOGO.png" alt="Bootstrap" width="20%" height="20%">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-          <!-- INICIO -->
-        <li   class="nav-item">
-            <a class="white_color" class="nav-link" href="../index.html">Inicio</a>
-        </li>
-
-           <!-- NOTICIAS -->
-        <li class="nav-item">
-            <a class="white_color" class="nav-link" href="./Noticias.html">Noticias</a>
-        </li>
-
-            <!-- ESTRENOS -->
-         <li class="nav-item">
-              <a class="white_color" class="nav-link" href="./Estrenos.html">Estrenos</a>
-        </li>
-            
-            <!-- NOSOTROS -->
-        <li class="nav-item">
-              <a class="white_color" class="nav-link" href="./Nosotros.htm">Nosotros</a>
-        </li> 
-
-            <!-- CONTACTO -->
-        <li class="nav-item">
-              <a class="white_color" class="nav-link active" href="./Contacto.html">Contacto</a>
-        </li> 
-
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-          <button class="button" type="submit">Buscar</button>
-        </form>
-      </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../IMG's/LOGOS.png" alt="AniReport Logo"  class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-3">
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Estrenos.html">Estrenos</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Nosotros.htm">Nosotros</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
-</header>
+</nav>
 
-<div class="container d-flex justify-content-center">
-<form>
-  <div class="mb-3">
-    <label class="text_color" for="exampleInputEmail1" class="form-label">Nombre Completo</label>
-    <input placeholder="Aquí tu nombre completo"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div class="sub_text_color"  id="emailHelp" class="form-text">*Esta información no será compartida con nadie.</div>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label class="text_color" for="name">Nombre Completo</label>
+        <input placeholder="Aquí tu nombre completo" type="text" class="form-control" id="name">
+      </div>
+
+      <div class="mb-3">
+        <label class="text_color" for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="tugmailpersonal@gmail.com">
+      </div>
+
+      <div class="mb-3">
+        <label class="text_color" for="message">Mensaje</label>
+        <textarea placeholder="Aquí escribe tu mensaje..." class="form-control" id="message" rows="3"></textarea>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms">
+        <label class="sub_text_color form-check-label" for="terms">Acepto los términos y condiciones</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
   </div>
-
-  <div class="mb-3">
-    <label class="text_color" for="exampleInputPassword1"    class="form-label">Email</label>
-    <input type="emailHelp" class="form-control" id="exampleInputPassword1" placeholder="tugmailpersonal@gmail.com">
-  </div>
-
-  <div class="mb-3">
-    <label class="text_color" for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-    <textarea placeholder="Aquí escribe tu mensaje..."  class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-  
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="sub_text_color" class="form-check-label" for="exampleCheck1">Terminos y condiciones</label>
-  </div>
-  
+</section>
 
 
 
 
-  
-  <button class="button" type="submit">Enviar</button>
-</form>
-</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <!-- Redes sociales -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <!-- Enlaces de interés -->
+        <div class="footer-links">
+            <h4>Redes sociales</h4>
+            <hr class="footer-line">
+            <ul>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">DMCA</a></li>
+            </ul>
+        </div>
+
+        <!-- Derechos de autor y DMCA -->
+        <div class="footer-bottom">
+            <div class="dmca">
+            </div>
+            <p>© 2018 - 2025 AniReport.com - Todos los derechos reservados.</p>
+            <p>Si quieres copiar o compartir nuestro contenido, puedes hacerlo. Siempre y cuando reconozcas la autoría del contenido.</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JavaScript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-<!-- JS BOOSTRAP --> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </html>
