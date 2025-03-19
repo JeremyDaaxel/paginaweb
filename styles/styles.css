@@ -82,72 +82,76 @@
   color: white;
 }
 
-.releases-section {
-  background: linear-gradient(135deg, #2c005e, #0a0427);
-  padding: 60px 0;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-}
-.releases-section .section-title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 5px;
-}
-.releases-section .section-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-  opacity: 0.8;
-  margin-bottom: 30px;
-}
-.releases-section .releases-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-content: center;
-}
-.releases-section .release-card {
-  background: linear-gradient(#411466, #240042);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s;
-  padding: 20px;
-  text-align: left;
-}
-.releases-section .release-card:hover {
-  transform: scale(1.02);
-}
-.releases-section .release-card .release-content {
-  padding-bottom: 10px;
-}
-.releases-section .release-card .release-content .release-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-.releases-section .release-card .release-content .release-date {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #f1c40f;
-}
-.releases-section .release-card .release-content .release-description {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-.releases-section .release-card .release-image {
-  width: 100%;
-  height: 180px;
-  background: #dfe6e9;
-  border-radius: 8px;
+.yellow_highlights {
+  color: #f19100;
 }
 
+.estrenos-section {
+  background: linear-gradient(135deg, #2c005e, #0a0427);
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.estrenos-section .container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.estrenos-section .fila {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  border: 2px solid #f19100;
+  padding: 2rem;
+  border-radius: 15px;
+}
 @media (max-width: 768px) {
-  .releases-grid {
-    grid-template-columns: 1fr;
+  .estrenos-section .fila {
+    flex-direction: column;
+    align-items: center;
   }
 }
+.estrenos-section .estreno {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  flex: 1;
+}
+.estrenos-section .estreno:nth-child(even) {
+  flex-direction: row;
+}
+.estrenos-section .estreno .estreno-texto {
+  flex: 1;
+}
+.estrenos-section .estreno .estreno-texto .estreno-titulo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+}
+.estrenos-section .estreno .estreno-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.estrenos-section .estreno .estreno-texto p strong {
+  font-weight: 800;
+}
+.estrenos-section .estreno .estreno-texto p em {
+  font-style: italic;
+}
+.estrenos-section .estreno .estreno-imagen {
+  flex: 1;
+}
+.estrenos-section .estreno .estreno-imagen img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 2px solid #f19100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 .news-section {
   background: linear-gradient(135deg, #2c005e, #0a0427);
   padding: 60px 0;
